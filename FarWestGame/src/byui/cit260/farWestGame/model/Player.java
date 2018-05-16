@@ -59,12 +59,13 @@ public class Player implements Serializable{
         return true;
     }
 
-    public <any> getGames() {
+    public ArrayList<Game> getGames() {
         return games;
     }
 
-    public void setGames(<any> games) {
+    public void setGames(ArrayList<Game> games) {
         this.games = games;
-    }    
+    }
+   
     
 }
