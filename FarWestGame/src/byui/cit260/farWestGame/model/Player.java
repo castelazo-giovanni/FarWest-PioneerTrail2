@@ -6,6 +6,7 @@
 package byui.cit260.farWestGame.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
@@ -13,6 +14,7 @@ import java.util.Objects;
  * @author Giovanni
  */
 public class Player implements Serializable{
+    
     private String name; 
     private ArrayList<Game> games = new ArrayList<Game>();
 
