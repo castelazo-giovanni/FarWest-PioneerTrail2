@@ -5,9 +5,14 @@
  */
 package farwestgame;
 
+import byui.cit260.farWestGame.model.Actor;
 import byui.cit260.farWestGame.model.Game;
+import byui.cit260.farWestGame.model.Map;
 import byui.cit260.farWestGame.model.Player;
+import byui.cit260.farWestGame.model.Resource;
 import byui.cit260.farWestGame.model.Supply;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -20,7 +25,7 @@ public class FarWestGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         //game class Giovanni Castelazo
+        //game class Giovanni Castelazo
         Game game1 = new Game();
         game1.setGameName("Far West");
         System.out.println(game1.toString());
@@ -33,6 +38,24 @@ public class FarWestGame {
         //supply class Araceli Camarillo
         Supply supply1 = new Supply("hammer", 1, 5);
         System.out.println(supply1.toString());
+    
+        //Actor class Agustin Gimenez
+        Actor actor = new Actor();
+        actor.setName("Agustin");
+        System.out.println(actor.toString());
+        
+        //Resources class Agustin Gimenez
+        Resource resource1 = new Resource();
+        List<String> toolList = new ArrayList<>();
+        toolList.add("newTool");
+        resource1.setToolList(toolList);
+        System.out.println(resource1.getToolList().get(0));
+
+        //Map class Agustin Gimenez
+        Map map1 = new Map();
+        map1.setRowCount(5);
+        map1.setColumnCount(8);
+        System.out.println(map1.toString());
     }
     
 }

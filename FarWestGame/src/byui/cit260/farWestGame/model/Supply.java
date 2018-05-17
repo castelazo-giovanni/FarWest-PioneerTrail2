@@ -18,6 +18,10 @@ public class Supply implements Serializable {
     private double supplyAmount;
     private double amountRequired;
 
+    public Supply() {
+    }
+
+    
     public Supply(String supplyType, double supplyAmount, double amountRequired) {
         this.supplyType = supplyType;
         this.supplyAmount = supplyAmount;
