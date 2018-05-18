@@ -5,10 +5,16 @@
  */
 package byui.cit260.farWestGame.model;
 
+import java.io.Serializable;
+
 /**
  *
- * @author kitka_000
+ * @author Camarillo-Araceli
  */
-public class Nourishment {
+public class Nourishment implements Serializable {
     
+    //attribute variables
+    private String nourishmentType;
+    private double nourishmentAmount;
+    private double requiredNourishmentAmount;
 }
