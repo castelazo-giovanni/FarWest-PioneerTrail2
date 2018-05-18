@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author FGL
+ * @author FGL -
  */
 public class Actor implements Serializable{
     
