@@ -69,8 +69,8 @@ public class FarWestGame {
         System.out.println(health1.toString());
  
         //Tool class Araceli Camarillo
-        Tool item1 = new Tool("wrench", 1, 5);
-        System.out.println(item1.toString());
+        Tool tool1 = new Tool("wrench", 5, 2);
+        System.out.println(tool1.toString());
                 
     }
     
