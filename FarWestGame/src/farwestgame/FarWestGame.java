@@ -13,6 +13,7 @@ import byui.cit260.farWestGame.model.Nourishment;
 import byui.cit260.farWestGame.model.Player;
 import byui.cit260.farWestGame.model.Resource;
 import byui.cit260.farWestGame.model.Supply;
+import byui.cit260.farWestGame.model.Tool;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +39,7 @@ public class FarWestGame {
         System.out.println(player1.toString());
                 
         //supply class Araceli Camarillo
-        Supply supply1 = new Supply("hammer", 1, 5);
+        Supply supply1 = new Supply("tent", 1, 5);
         System.out.println(supply1.toString());
     
         //Actor class Agustin Gimenez
@@ -63,15 +64,14 @@ public class FarWestGame {
         Nourishment nourishment1 = new Nourishment("food", 1, 5);
         System.out.println(nourishment1.toString());
         
-        //Health class
+        //Health class Araceli Camarillo
         Health health1 = new Health(true, "hypothermia", 5);
         System.out.println(health1.toString());
-        
-        //class
-        
-        
-        
-        
+ 
+        //Tool class Araceli Camarillo
+        Tool item1 = new Tool("wrench", 1, 5);
+        System.out.println(item1.toString());
+                
     }
     
 }
