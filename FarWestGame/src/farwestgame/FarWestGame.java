@@ -34,6 +34,10 @@ public class FarWestGame {
         game1.setGameName("Far West");
         System.out.println(game1.toString());
         
+        //Scene class Giovanni Castelazo
+        System.out.println(Scene.Zion.getSceneName());
+        System.out.println(Scene.Zion.getSceneDescription());
+        
         //player class Agustin Gimenez
         Player player1 = new Player();
         player1.setName("Gio");
@@ -61,7 +65,7 @@ public class FarWestGame {
         map1.setColumnCount(8);
         System.out.println(map1.toString());
         
-        Nourishment Class Araceli Camarillo
+        //Nourishment Class Araceli Camarillo
         Nourishment nourishment1 = new Nourishment("food", 1, 5);
         System.out.println(nourishment1.toString());
         
@@ -73,9 +77,7 @@ public class FarWestGame {
         Tool tool1 = new Tool("wrench", 5, 2);
         System.out.println(tool1.toString());
         
-        //Scene class Giovanni Castelazo
-        System.out.println(Scene.Zion.getSceneName());
-        System.out.println(Scene.Zion.getSceneDescription());
+
     }
     
 }
