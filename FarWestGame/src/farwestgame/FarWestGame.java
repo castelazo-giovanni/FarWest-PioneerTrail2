@@ -7,7 +7,9 @@ package farwestgame;
 
 import byui.cit260.farWestGame.model.Actor;
 import byui.cit260.farWestGame.model.Game;
+import byui.cit260.farWestGame.model.Health;
 import byui.cit260.farWestGame.model.Map;
+import byui.cit260.farWestGame.model.Nourishment;
 import byui.cit260.farWestGame.model.Player;
 import byui.cit260.farWestGame.model.Resource;
 import byui.cit260.farWestGame.model.Supply;
@@ -56,6 +58,20 @@ public class FarWestGame {
         map1.setRowCount(5);
         map1.setColumnCount(8);
         System.out.println(map1.toString());
+        
+        //Nourishment Class Araceli Camarillo
+        Nourishment nourishment1 = new Nourishment("food", 1, 5);
+        System.out.println(nourishment1.toString());
+        
+        //Health class
+        Health health1 = new Health(true, "hypothermia", 5);
+        System.out.println(health1.toString());
+        
+        //class
+        
+        
+        
+        
     }
     
 }
