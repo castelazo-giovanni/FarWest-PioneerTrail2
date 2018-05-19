@@ -12,6 +12,7 @@ import byui.cit260.farWestGame.model.Map;
 import byui.cit260.farWestGame.model.Nourishment;
 import byui.cit260.farWestGame.model.Player;
 import byui.cit260.farWestGame.model.Resource;
+import byui.cit260.farWestGame.model.Scene;
 import byui.cit260.farWestGame.model.Supply;
 import byui.cit260.farWestGame.model.Tool;
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class FarWestGame {
         map1.setColumnCount(8);
         System.out.println(map1.toString());
         
-        //Nourishment Class Araceli Camarillo
+        Nourishment Class Araceli Camarillo
         Nourishment nourishment1 = new Nourishment("food", 1, 5);
         System.out.println(nourishment1.toString());
         
@@ -71,7 +72,10 @@ public class FarWestGame {
         //Tool class Araceli Camarillo
         Tool tool1 = new Tool("wrench", 5, 2);
         System.out.println(tool1.toString());
-                
+        
+        //Scene class Giovanni Castelazo
+        System.out.println(Scene.Zion.getSceneName());
+        System.out.println(Scene.Zion.getSceneDescription());
     }
     
 }
