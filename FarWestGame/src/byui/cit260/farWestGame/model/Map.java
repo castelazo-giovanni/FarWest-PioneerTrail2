@@ -22,6 +22,8 @@ public class Map implements Serializable{
     private int columnCount;
     private int currentRow;
     private int currentColumn;
+    // Adding cardinality to location class
+    private Location[] locations = new Location[25];
 
     public Map() {
     }
@@ -125,5 +127,14 @@ public class Map implements Serializable{
         return "Map{" + "locationList=" + locationList + ", currentLocation=" + currentLocation + ", rowCount=" + rowCount + ", columnCount=" + columnCount + ", currentRow=" + currentRow + ", currentColumn=" + currentColumn + '}';
     }
     
+    // Setter and getter for location array
+
+    public Location[] getLocations() {
+        return locations;
+    }
+
+    public void setLocations(Location[] locations) {
+        this.locations = locations;
+    }
     
 }

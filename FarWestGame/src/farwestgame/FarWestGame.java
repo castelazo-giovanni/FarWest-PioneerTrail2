@@ -15,6 +15,7 @@ import byui.cit260.farWestGame.model.Resource;
 import byui.cit260.farWestGame.model.Scene;
 import byui.cit260.farWestGame.model.Supply;
 import byui.cit260.farWestGame.model.Tool;
+import byui.cit260.farWestGame.model.Location;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +38,17 @@ public class FarWestGame {
         //Scene class Giovanni Castelazo
         System.out.println(Scene.Zion.getSceneName());
         System.out.println(Scene.Zion.getSceneDescription());
+        System.out.println(Scene.Zion.getSceneIllness());
+        
+        //Location class Giovanni Castelazo
+        Location location1 = new Location();
+        location1.setLocationVisited(true);
+        location1.setLocationRemaining(true);
+        location1.setRow(5);
+        location1.setColumn(10);
+        System.out.println(location1.toString());
+        
+       
         
         //player class Agustin Gimenez
         Player player1 = new Player();
