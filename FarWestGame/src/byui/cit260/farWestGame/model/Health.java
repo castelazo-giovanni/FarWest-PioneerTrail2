@@ -18,7 +18,11 @@ public class Health implements Serializable {
     private String illnessType;
     private Integer mortalityRate;
     
-    //constructor
+    //default constructor
+    public Health() {
+    }
+    
+    //overloaded constructor
 
     public Health(Boolean alive, String illnessType, Integer mortalityRate) {
         this.alive = alive;

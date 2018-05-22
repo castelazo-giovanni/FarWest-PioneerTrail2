@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author kitka_000
+ * @Camarillo-Araceli
  */
 public class Tool implements Serializable {
     //class attributes
@@ -18,8 +18,12 @@ public class Tool implements Serializable {
     private Integer toolAmount;
     private Integer requiredAmount;
     
-    //constructor
+    //default constructor (this will allow you to change the data in new objects created for this class
+    //as long as it's NOT an enum class
+    public Tool() {
+    }
 
+    //overloaded constructor
     public Tool(String toolType, Integer toolAmount, Integer requiredAmount) {
         this.toolType = toolType;
         this.toolAmount = toolAmount;

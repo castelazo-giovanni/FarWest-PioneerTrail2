@@ -19,6 +19,10 @@ public class Nourishment implements Serializable {
     private double nourishmentAmount;
     private double requiredNourishmentAmount;
     
+    //def constructor
+    public Nourishment() {
+    }
+
     //constructors
 
     public Nourishment(String nourishmentType, double nourishmentAmount, double requiredNourishmentAmount) {
