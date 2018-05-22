@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author Camarillo-Araceli
+ * @author Camarillo-Ara
  */
 public class Health implements Serializable {
     //attribute variables
