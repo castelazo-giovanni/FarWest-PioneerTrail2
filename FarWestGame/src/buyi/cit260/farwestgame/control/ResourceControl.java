@@ -5,12 +5,9 @@
  */
 package buyi.cit260.farwestgame.control;
 
-/**
- *
- * @author Giovanni
- */
+
 public class ResourceControl {
-    
+    // Author Giovanni
     public static double calNourishmentUsed(int numberActors, int milesTraveled) {
         
         // checks to make sure you don't have too many or not enough actors
@@ -48,6 +45,34 @@ public class ResourceControl {
         return nourishmentUsed;
     }
     
-    
+    // Author Giovanni
+    public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, int remainingNourishment) {
+        
+        // checks to make sure that beginning wheel does not exceed max
+        if (beginningWheel < 0 || beginningWheel > 10) {
+            return -1;
+        }
+        
+        // checks to make sure that beginning bullets do not exceed max
+        if (beginningBullets < 0 || beginningBullets > 5000) {
+            return -1;
+        }  
+        
+        // checks to make sure that beginning wood does not exceed max
+        if (beginningWood < 0 || beginningWood > 50) {
+            return -1;
+        }
+        
+        // calculates the total resource weight
+        double totalResourceWeight = (beginningWheel * 50) + (beginningBullets * .10) + (beginningWood * 50) + remainingNourishment;
+        
+        // calculates if total resource weight exceeds limits
+        
+        if (totalResourceWeight > 500) {
+            return -1;
+        } else {        
+        return totalResourceWeight;
+        }
+    }
     
 }
