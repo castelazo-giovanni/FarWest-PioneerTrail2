@@ -34,7 +34,7 @@ public class ResourceControlTest {
     public void testCalNourishmentUsed() {
         System.out.println("calNourishmentUsed");
         
-        // ---- Test Case 1 ----
+        // ---- calNourishmentUsed Test Case 1 ----
         System.out.println("\tTest case 1");
         
         // define the input variables
@@ -51,7 +51,7 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
         
-        // ---- Test Case 2 ----
+        // ---- calNourishmentUsed Test Case 2 ----
         System.out.println("\tTest case 2");
         
         // define the input variables
@@ -68,7 +68,7 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
         
-        // ---- Test Case 3 ----
+        // ---- calNourishmentUsed Test Case 3 ----
         System.out.println("\tTest case 3");
         
         // define the input variables
@@ -85,7 +85,7 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
         
-        // ---- Test Case 4 ----
+        // ---- calNourishmentUsed Test Case 4 ----
         System.out.println("\tTest case 4");
         
         // define the input variables
@@ -102,7 +102,7 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
         
-        // ---- Test Case 5 ----
+        // ---- calNourishmentUsed Test Case 5 ----
         System.out.println("\tTest case 5");
         
         // define the input variables
@@ -119,7 +119,7 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
         
-        // ---- Test Case 6 ----
+        // ---- calNourishmentUsed Test Case 6 ----
         System.out.println("\tTest case 6");
         
         // define the input variables
@@ -136,7 +136,7 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
         
-        // ---- Test Case 7 ----
+        // ---- calNourishmentUsed Test Case 7 ----
         System.out.println("\tTest case 7");
         
         // define the input variables
