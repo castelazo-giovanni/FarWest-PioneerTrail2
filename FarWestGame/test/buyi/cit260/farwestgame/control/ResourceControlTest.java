@@ -31,6 +31,8 @@ public class ResourceControlTest {
      * Test of calNourishmentUsed method, of class ResourceControl.
      */
     @Test
+    
+    // Author Giovanni (team assignment)
     public void testCalNourishmentUsed() {
         System.out.println("calNourishmentUsed");
         
@@ -154,4 +156,143 @@ public class ResourceControlTest {
         
     }
     
+    @Test
+   
+    // Author Giovanni (individual assignment)
+    public void testCalResoure(){
+        System.out.println("calResource");
+        
+        // ---- calResource Test Case 1 ----
+        System.out.println("\tTest case 1");
+        
+        // define the input variables
+        int beginningWheel = 3;
+        int beginningBullets = 200;
+        int beginningWood = 12;
+        double remainingNourishment = 200;
+        
+        // define the expected output value
+        double expResult = 490;
+        
+        // call the method
+        double result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+        
+        // ---- calResourse Test Case 2 ----
+        System.out.println("\tTest case 2");
+        
+        // define the input variables
+        beginningWheel = 2;
+        beginningBullets = 50;
+        beginningWood = 20;
+        remainingNourishment = 140;
+        
+        // define the expected output value
+        expResult = 445;
+        
+        // call the method
+        result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+        
+        // ---- calResourse Test Case 3 ----
+        System.out.println("\tTest case 3");
+        
+        // define the input variables
+        beginningWheel = 1;
+        beginningBullets = 300;
+        beginningWood = 10;
+        remainingNourishment = 250;
+        
+        // define the expected output value
+        expResult = 430;
+        
+        // call the method
+        result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+                
+        // ---- calResourse Test Case 4 ----
+        System.out.println("\tTest case 4");
+        
+        // define the input variables
+        beginningWheel = 4;
+        beginningBullets = 150;
+        beginningWood = 15;
+        remainingNourishment = 100;
+        
+        // define the expected output value
+        expResult = 465;
+        
+        // call the method
+        result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+        
+        // ---- calResourse Test Case 5 ----
+        System.out.println("\tTest case 5");
+        
+        // define the input variables
+        beginningWheel = 0;
+        beginningBullets = 0;
+        beginningWood = 0;
+        remainingNourishment = 500;
+        
+        // define the expected output value
+        expResult = 500;
+        
+        // call the method
+        result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+        
+        // ---- calResourse Test Case 6 ----
+        System.out.println("\tTest case 6");
+        
+        // define the input variables
+        beginningWheel = 4;
+        beginningBullets = 0;
+        beginningWood = 0;
+        remainingNourishment = 300;
+        
+        // define the expected output value
+        expResult = 500;
+        
+        // call the method
+        result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+        
+        // ---- calResourse Test Case 7 ----
+        System.out.println("\tTest case 7");
+        
+        // define the input variables
+        beginningWheel = 3;
+        beginningBullets = 150;
+        beginningWood = 18;
+        remainingNourishment = 150;
+        
+        // define the expected output value
+        expResult = 495;
+        
+        // call the method
+        result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        
+        //test to see if the result expected equals the expected result
+        assertEquals(expResult, result, 0.0);
+        
+    }
 }
