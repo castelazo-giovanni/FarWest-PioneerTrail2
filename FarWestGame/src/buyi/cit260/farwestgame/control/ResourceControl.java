@@ -7,7 +7,7 @@ package buyi.cit260.farwestgame.control;
 
 
 public class ResourceControl {
-    // Author Giovanni
+    // Author Giovanni (team assignment)
     public static double calNourishmentUsed(int numberActors, int milesTraveled) {
         
         // checks to make sure you don't have too many or not enough actors
@@ -45,7 +45,7 @@ public class ResourceControl {
         return nourishmentUsed;
     }
     
-    // Author Giovanni
+    // Author Giovanni (individual assignment)
     public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, int remainingNourishment) {
         
         // checks to make sure that beginning wheel does not exceed max
@@ -60,6 +60,11 @@ public class ResourceControl {
         
         // checks to make sure that beginning wood does not exceed max
         if (beginningWood < 0 || beginningWood > 50) {
+            return -1;
+        }
+        
+        // checks to make sure that beginning nourishment does not exceed max
+        if (beginningNourishment < 0 || beginningNourishment > 500) {
             return -1;
         }
         
