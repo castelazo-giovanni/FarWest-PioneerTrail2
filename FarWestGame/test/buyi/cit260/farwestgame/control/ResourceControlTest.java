@@ -169,7 +169,7 @@ public class ResourceControlTest {
         int beginningWheel = 3;
         int beginningBullets = 200;
         int beginningWood = 12;
-        double remainingNourishment = 200;
+        int remainingNourishment = 200;
         
         // define the expected output value
         double expResult = 490;
@@ -331,7 +331,6 @@ public class ResourceControlTest {
         double expResult = 0.0;
         double result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 }

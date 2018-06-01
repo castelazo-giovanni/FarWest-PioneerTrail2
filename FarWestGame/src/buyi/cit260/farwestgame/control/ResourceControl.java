@@ -70,7 +70,7 @@ public class ResourceControl {
         }
         
         // calculates the total resource weight
-        double totalResourceWeight = (beginningWheel * 50) + (beginningBullets * .10) + (beginningWood * 50) + remainingNourishment;
+        double totalResourceWeight = (beginningWheel * 50) + (beginningBullets * .10) + (beginningWood * 10) + remainingNourishment;
         
         // calculates if total resource weight exceeds limits
         
@@ -81,7 +81,7 @@ public class ResourceControl {
         }
     }
 
-    
+    //Author Agustin (FGL) (Team Assignment)
     public static double calSupplyFound(int userWheel, int userBullets, int userWood, int beginningWheel, int beginningBullets, int beginningWood, int wheelAvailable, int bulletsAvailable, int woodAvailable) {
     
         
