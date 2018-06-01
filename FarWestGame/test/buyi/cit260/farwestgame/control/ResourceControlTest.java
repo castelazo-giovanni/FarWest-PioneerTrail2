@@ -295,4 +295,43 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
     }
+
+    /**
+     * Test of calResource method, of class ResourceControl.
+     */
+    @Test
+    public void testCalResource() {
+        System.out.println("calResource");
+        int beginningWheel = 0;
+        int beginningBullets = 0;
+        int beginningWood = 0;
+        int remainingNourishment = 0;
+        double expResult = 0.0;
+        double result = ResourceControl.calResource(beginningWheel, beginningBullets, beginningWood, remainingNourishment);
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of calSupplyFound method, of class ResourceControl.
+     */
+    @Test
+    public void testCalSupplyFound() {
+        System.out.println("calSupplyFound");
+        int userWheel = 0;
+        int userBullets = 0;
+        int userWood = 0;
+        int beginningWheel = 0;
+        int beginningBullets = 0;
+        int beginningWood = 0;
+        int wheelAvailable = 0;
+        int bulletsAvailable = 0;
+        int woodAvailable = 0;
+        double expResult = 0.0;
+        double result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
 }
