@@ -299,20 +299,106 @@ public class ResourceControlTest {
    
     //Author Agustin (FGL) (Team assignment)
     @Test
-    public void testCalSupplyFound() {
-        System.out.println("calSupplyFound");
-        int userWheel = 1;
-        int userBullets = 2;
-        int userWood = 1;
-        int beginningWheel = 2;
-        int beginningBullets = 3;
-        int beginningWood = 3;
-        int wheelAvailable = 2;
-        int bulletsAvailable = 5;
-        int woodAvailable = 2;
-        double expResult = 60.2;
-        double result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
-        assertEquals(expResult, result, 0.0);
+   public void testCalSupplyFound() {
+       System.out.println("calSupplyFound");
+       
+       System.out.println("\tTest case 1");
+       int userWheel = 1;
+       int userBullets = 2;
+       int userWood = 1;
+       int beginningWheel = 2;
+       int beginningBullets = 3;
+       int beginningWood = 3;
+       int wheelAvailable = 2;
+       int bulletsAvailable = 5;
+       int woodAvailable = 2;
+       double expResult = 60.2;
+       double result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+       
+       System.out.println("\tTest case 2");
+       userWheel = 1;
+       userBullets = 2;
+       userWood = 2;
+       beginningWheel = 2;
+       beginningBullets = 8;
+       beginningWood = 4;
+       wheelAvailable = 2;
+       bulletsAvailable = 5;
+       woodAvailable = 2;
+       expResult = 70.2;
+       result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+       
+       System.out.println("\tTest case 3");
+       userWheel = 2;
+       userBullets = 5;
+       userWood = 2;
+       beginningWheel = 2;
+       beginningBullets = 5;
+       beginningWood = 3;
+       wheelAvailable = 2;
+       bulletsAvailable = 5;
+       woodAvailable = 2;
+       expResult = 120.5;
+       result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+       
+       System.out.println("\tTest case 4");
+       userWheel = 3;
+       userBullets = 2;
+       userWood = 2;
+       beginningWheel = 2;
+       beginningBullets = 3;
+       beginningWood = 3;
+       wheelAvailable = 4;
+       bulletsAvailable = 5;
+       woodAvailable = 3;
+       expResult = 170.2;        
+       result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+       
+       System.out.println("\tTest case 5");
+       userWheel = 3;
+       userBullets = 5;
+       userWood = 1;
+       beginningWheel = 2;
+       beginningBullets = 3;
+       beginningWood = 3;
+       wheelAvailable = 4;
+       bulletsAvailable = 8;
+       woodAvailable = 2;
+       expResult = 160.5;
+       result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+       
+       System.out.println("\tTest case 6");
+       userWheel = 2;
+       userBullets = 6;
+       userWood = 5;
+       beginningWheel = 3;
+       beginningBullets = 4;
+       beginningWood = 5;
+       wheelAvailable = 10;
+       bulletsAvailable = 90;
+       woodAvailable = 50;
+       expResult = 150.6;
+       result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+       
+       System.out.println("\tTest case 7");
+       userWheel = 1;
+       userBullets = 2;
+       userWood = 2;
+       beginningWheel = 3;
+       beginningBullets = 4;
+       beginningWood = 5;
+       wheelAvailable = 10;
+       bulletsAvailable = 90;
+       woodAvailable = 50;
+       expResult = 70.2;
+       result = ResourceControl.calSupplyFound(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
        
     }
 }
