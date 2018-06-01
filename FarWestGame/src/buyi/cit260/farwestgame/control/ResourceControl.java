@@ -80,4 +80,63 @@ public class ResourceControl {
         }
     }
     
+    public static double calSupplyFound(int userWheel, int userBullets, int userWood, int beginningWheel, int beginningBullets, int beginningWood, int wheelAvailable, int bulletsAvailable, int woodAvailable) {
+    
+        
+        if (beginningWheel < 0 || beginningWheel > 10) {
+            return -1;
+        }
+        
+        if (beginningBullets < 0 || beginningBullets > 5000) {
+            return -1;
+        }
+        
+        if (beginningWood < 0 || beginningWood > 50) {
+            return -1;
+        }
+        
+        if (userWheel > wheelAvailable) {
+            return -1;
+        }
+        
+        if (userBullets > bulletsAvailable) {
+            return -1;
+        }
+        
+        if (userWood > woodAvailable) {
+            return -1;
+        }
+        
+        if (beginningWheel + userWheel > 10) {
+            return -1;
+        }
+        
+        if (beginningBullets + userBullets > 10) {
+            return -1;
+        }
+        
+        if (beginningWood + userWood > 10) {
+            return -1;
+        }
+        
+        int wheel = 50;
+        double bullets = 0.1;
+        int wood = 10;
+        
+        beginningWheel =+ userWheel;
+        beginningBullets =+ userBullets;
+        beginningWood =+ userWood;
+        
+        supplyWeight = (beginningWheel * wheel) + (beginningBullets * bullets) + (beginningWood * wood);
+                
+          if (supplyWeight > 500) {
+            return -1;
+          }      
+                
+        return beginningWheel; 
+        return beginningBullets; 
+        return beginningWood; 
+        return supplyWeight;
+        
+        
 }
