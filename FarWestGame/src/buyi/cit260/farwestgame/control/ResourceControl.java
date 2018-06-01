@@ -62,6 +62,7 @@ public class ResourceControl {
         if (beginningWood < 0 || beginningWood > 50) {
             return -1;
         }
+        int beginningNourishment = 0;
         
         // checks to make sure that beginning nourishment does not exceed max
         if (beginningNourishment < 0 || beginningNourishment > 500) {
@@ -127,16 +128,17 @@ public class ResourceControl {
         beginningBullets =+ userBullets;
         beginningWood =+ userWood;
         
-        supplyWeight = (beginningWheel * wheel) + (beginningBullets * bullets) + (beginningWood * wood);
+        double supplyWeight = (beginningWheel * wheel) + (beginningBullets * bullets) + (beginningWood * wood);
                 
           if (supplyWeight > 500) {
             return -1;
-          }      
+          }
+          else {
+            return supplyWeight;    
+          }
                 
-        return beginningWheel; 
-        return beginningBullets; 
-        return beginningWood; 
-        return supplyWeight;
+         
         
         
+    }    
 }
