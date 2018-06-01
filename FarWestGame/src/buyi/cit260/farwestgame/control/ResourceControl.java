@@ -46,7 +46,7 @@ public class ResourceControl {
     }
     
     // Author Giovanni (individual assignment)
-    public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, int remainingNourishment) {
+     public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, int remainingNourishment) {
         
         // checks to make sure that beginning wheel does not exceed max
         if (beginningWheel < 0 || beginningWheel > 10) {
@@ -80,6 +80,7 @@ public class ResourceControl {
         return totalResourceWeight;
         }
     }
+
     
     public static double calSupplyFound(int userWheel, int userBullets, int userWood, int beginningWheel, int beginningBullets, int beginningWood, int wheelAvailable, int bulletsAvailable, int woodAvailable) {
     
