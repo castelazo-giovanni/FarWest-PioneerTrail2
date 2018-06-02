@@ -108,18 +108,13 @@ public class ResourceControl {
 		return -1;
         }                
                         
-        int wheel = 50;
-        double bullet = 0.1;
-        int wood = 10;
-        
         beginningWheel =- wheelUsed;
         beginningBullets =- bulletsUsed;
         beginningWood =- woodUsed;
         
-        double supplyWeight = (beginningWheel * wheel) + (beginningBullets * bullet) + (beginningWood * wood);
+        double supplyWeight = (beginningWheel * 50) + (beginningBullets * 0.1) + (beginningWood * 10);
 
-        return beginningWheel, beginningBullets, beginningWood;
-        return supplyWeight;
+        return int [beginningWheel, beginningBullets, beginningWood, supplyWeight];
 
     }
 
