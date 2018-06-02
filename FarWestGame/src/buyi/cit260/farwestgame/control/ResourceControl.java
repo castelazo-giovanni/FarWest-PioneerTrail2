@@ -115,13 +115,13 @@ public class ResourceControl {
         double supplyWeight = (beginningWheel * 50) + (beginningBullets * 0.1) + (beginningWood * 10);
         
         double[] supplyResult;
-        supplyResult = new double [4]; //create an array of 4 elements
+        supplyResult = new double[4]; //create an array of 4 elements
         supplyResult[0] = beginningWheel;
         supplyResult[1] = beginningBullets;
         supplyResult[2] = beginningWood;
         supplyResult[3] = supplyWeight;
 
-        return (supplyResult);
+        return supplyResult;
 
     }
 
