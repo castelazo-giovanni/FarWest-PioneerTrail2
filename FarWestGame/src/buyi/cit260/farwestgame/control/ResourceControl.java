@@ -80,6 +80,48 @@ public class ResourceControl {
         return totalResourceWeight;
         }
     }
+     
+     
+     //Author Araceli Camarillo (Team Assignment)
+    public static double calSupplyUsed(int beginningWheel, int beginningBullets, int beginningWood, int wheelUsed, int bulletsUsed, int woodUsed) {
+        if (beginningWheel < 0 || beginningWheel > 10) {
+		return -1;
+        }
+
+        if (beginningBullets  < 0 || beginningBullets > 5000) {
+		return -1;
+        }
+
+        if (beginningWood < 0 || beginningWood > 50) {
+		return -1;
+        }  
+        
+        if (wheelUsed > beginningWheel) {
+		return -1;
+        }
+        
+        if (bulletsUsed > beginningBullets) {
+		return -1;
+        }
+        
+        if (woodUsed > beginningWood) {
+		return -1;
+        }                
+                        
+        int wheel = 50;
+        double bullet = 0.1;
+        int wood = 10;
+        
+        beginningWheel =- wheelUsed;
+        beginningBullets =- bulletsUsed;
+        beginningWood =- woodUsed;
+        
+        double supplyWeight = (beginningWheel * wheel) + (beginningBullets * bullet) + (beginningWood * wood);
+
+        return beginningWheel, beginningBullets, beginningWood;
+        return supplyWeight;
+
+    }
 
     //Author Agustin (FGL) (Team Assignment)
     public static double calSupplyFound(int userWheel, int userBullets, int userWood, int beginningWheel, int beginningBullets, int beginningWood, int wheelAvailable, int bulletsAvailable, int woodAvailable) {
