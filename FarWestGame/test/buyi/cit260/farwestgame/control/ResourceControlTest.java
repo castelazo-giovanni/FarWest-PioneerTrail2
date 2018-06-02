@@ -295,8 +295,27 @@ public class ResourceControlTest {
         assertEquals(expResult, result, 0.0);
         
     }
-
-   
+    
+    //Author Araceli Camarillo (Team Assignment)
+    @Test
+    public void testCalSupplyUsed() {
+        System.out.println("calSupplyUsed");
+        
+        System.out.println("/tTest case 1");
+        int userWheel = 1;
+       int userBullets = 2;
+       int userWood = 1;
+       int beginningWheel = 2;
+       int beginningBullets = 3;
+       int beginningWood = 3;
+       int wheelAvailable = 2;
+       int bulletsAvailable = 5;
+       int woodAvailable = 2;
+       double expResult = 60.2;
+       double result = ResourceControl.calSupplyUsed(userWheel, userBullets, userWood, beginningWheel, beginningBullets, beginningWood, wheelAvailable, bulletsAvailable, woodAvailable);
+       assertEquals(expResult, result, 0.0);
+    }
+       
     //Author Agustin (FGL) (Team assignment)
     @Test
    public void testCalSupplyFound() {
