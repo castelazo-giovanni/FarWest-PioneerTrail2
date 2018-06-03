@@ -301,21 +301,21 @@ public class ResourceControlTest {
     public void testCalSupplyUsed() {
         System.out.println("calSupplyUsed");
         
-       System.out.println("/tTest case 1");
-       int beginningWheel = 2;
-       int beginningBullets = 200;
-       int beginningWood = 3;
+       System.out.println("\tTest case 1");
+//       int beginningWheel = 2;
+//       int beginningBullets = 200;
+//       int beginningWood = 3;
        int wheelUsed = 2;
        int bulletsUsed = 100;
        int woodUsed = 2;
        int beginningWheel = 0;
        int beginningBullets = 100;
        int beginningWood = 1;
-       double expResult = 20;
+       double expResult = -1;
        double result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
        
-       System.out.println("/tTest case 2");
+       System.out.println("\tTest case 2");
        beginningWheel = 5;
        beginningBullets = 500;
        beginningWood = 4;
@@ -325,11 +325,11 @@ public class ResourceControlTest {
        beginningWheel = 2;
        beginningBullets = 250;
        beginningWood = 2;
-       expResult = 145;
+       expResult = -1;
        result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
        
-       System.out.println("/tTest case 3");
+       System.out.println("\tTest case 3");
        beginningWheel = 1;
        beginningBullets = 800;
        beginningWood = 2;
@@ -339,11 +339,11 @@ public class ResourceControlTest {
        beginningWheel = 1;
        beginningBullets = 800;
        beginningWood = 2;
-       expResult = 150;
+       expResult = 1;
        result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
        
-       System.out.println("/tTest case 4");
+       System.out.println("\tTest case 4");
        beginningWheel = 2;
        beginningBullets = 600;
        beginningWood = 2;
@@ -353,11 +353,11 @@ public class ResourceControlTest {
        beginningWheel = 2;
        beginningBullets = 250;
        beginningWood = 1;
-       expResult = 135;
+       expResult = -1;
        result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
        
-       System.out.println("/tTest case 5");
+       System.out.println("\tTest case 5");
        beginningWheel = 3;
        beginningBullets = 100;
        beginningWood = 1;
@@ -367,11 +367,11 @@ public class ResourceControlTest {
        beginningWheel = 1;
        beginningBullets = 11;
        beginningWood = 1;
-       expResult = 61.1;
+       expResult = -1;
        result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
        
-       System.out.println("/tTest case 6");
+       System.out.println("\tTest case 6");
        beginningWheel = 4;
        beginningBullets = 140;
        beginningWood = 2;
@@ -381,11 +381,11 @@ public class ResourceControlTest {
        beginningWheel = 0;
        beginningBullets = 23;
        beginningWood = 1;
-       expResult = 12.3;
+       expResult = -1;
        result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
        
-       System.out.println("/tTest case 7");
+       System.out.println("\tTest case 7");
        beginningWheel = 1;
        beginningBullets = 230;
        beginningWood = 0;
@@ -395,7 +395,7 @@ public class ResourceControlTest {
        beginningWheel = 0;
        beginningBullets = 210;
        beginningWood = 0;
-       expResult = 21;
+       expResult = -1;
        result = ResourceControl.calSupplyUsed(beginningWheel, beginningBullets, beginningWood, wheelUsed, bulletsUsed, woodUsed);
        assertEquals(expResult, result, 0.0);
     }

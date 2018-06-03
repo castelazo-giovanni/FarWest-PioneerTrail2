@@ -121,7 +121,7 @@ public class ResourceControl {
         supplyResult[2] = beginningWood;
         supplyResult[3] = supplyWeight;
 
-        return supplyResult;
+        return 1;
 
     }
 
