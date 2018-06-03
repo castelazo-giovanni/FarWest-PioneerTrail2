@@ -46,7 +46,7 @@ public class ResourceControl {
     }
     
     // Author Giovanni (individual assignment)
-    public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, int remainingNourishment) {
+    public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, double remainingNourishment) {
         
         // checks to make sure that beginning wheel does not exceed max
         if (beginningWheel < 0 || beginningWheel > 10) {
@@ -64,12 +64,12 @@ public class ResourceControl {
         }
         
         // checks to make sure that beginning nourishment does not exceed max
-        if (beginningNourishment < 0 || beginningNourishment > 500) {
+        if (remainingNourishment < 0 || remainingNourishment > 500) {
             return -1;
         }
         
         // calculates the total resource weight
-        double totalResourceWeight = (beginningWheel * 50) + (beginningBullets * .10) + (beginningWood * 50) + remainingNourishment;
+        double totalResourceWeight = (beginningWheel * 50) + (beginningBullets * .10) + (beginningWood * 10) + remainingNourishment;
         
         // calculates if total resource weight exceeds limits
         
