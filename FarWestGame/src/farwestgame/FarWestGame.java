@@ -16,6 +16,7 @@ import byui.cit260.farWestGame.model.Scene;
 import byui.cit260.farWestGame.model.Supply;
 import byui.cit260.farWestGame.model.Tool;
 import byui.cit260.farWestGame.model.Location;
+import byui.cit260.farWestGame.view.StartProgramView;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,10 +26,22 @@ import java.util.List;
  * @author Giovanni
  */
 public class FarWestGame {
+    
+    public static void main(String[] args) {
+        StartProgramView startProgramView = new StartProgramView();
+        startProgramView.display();
+    }
+    
+ 
+    
+    
+    
+    
+/** This is old code, but I didn't want to just erase it
+ * Keeping it in order to have for future reference.
 
-    /**
-     * @param args the command line arguments
-     */
+    // @param args the command line arguments
+   
     public static void main(String[] args) {
         //game class Giovanni Castelazo
         Game game1 = new Game();
@@ -91,5 +104,5 @@ public class FarWestGame {
         
 
     }
-    
+   */ 
 }

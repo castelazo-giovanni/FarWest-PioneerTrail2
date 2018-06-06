@@ -43,6 +43,10 @@ public class StartProgramView {
 
         return inputs;
     }
+
+    public void display() {
+        System.out.println("**** display() called ****");
+    }
     
    
 }
