@@ -5,6 +5,8 @@
  */
 package byui.cit260.farWestGame.view;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Giovanni
@@ -44,6 +46,35 @@ public class StartProgramView {
         return inputs;
     }
 
+public String[] getInputs(){
+//
+String[] inputs = new String[1];
+// Display a description of the view?
+//
+//valid = false
+//WHILE valid == false (no input value has been entered)
+//
+//Display the prompt message
+//Get the value entered from the keyboard
+System.out.println("Select option"); 
+Scanner scanner = new Scanner(System.in); 
+String menuOption = scanner.nextLine();
+System.out.println(menuOption);
+//Trim off leading and trailing blanks from the value
+//IF length of the value < 1 then
+//Display "You must enter a non-blank value”
+if(menuOption.length()<1){
+System.out.println("You must enter a non-blank value");
+}
+//Continue (move to the top of the loop and repeat)
+//ENDIF
+//Assign the value to the fist position in the inputs array
+//valid = true (ends the loop)
+//ENDWHILE
+
+return inputs;
+}    
+    
     public void display() {
         System.out.println("**** display() called ****");
     }

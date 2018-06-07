@@ -30,6 +30,7 @@ public class FarWestGame {
     public static void main(String[] args) {
         StartProgramView startProgramView = new StartProgramView();
         startProgramView.display();
+        startProgramView.getInputs();
     }
     
  
