@@ -30,12 +30,12 @@ import java.util.List;
 public class FarWestGame {
     
     public static void main(String[] args) {
-//        StartProgramView startProgramView = new StartProgramView();
-//        startProgramView.display();
-//        startProgramView.getInputs();
+        StartProgramView startProgramView = new StartProgramView();
+        startProgramView.display();
+        startProgramView.getInputs();
 
-          HelpMenuView helpMenuView = new HelpMenuView(); //this creates the object
-          helpMenuView.displayHelpMenuView();//calling display function
+//          HelpMenuView helpMenuView = new HelpMenuView(); //this creates the object
+//          helpMenuView.displayHelpMenuView();//calling display function
     }
     
  
