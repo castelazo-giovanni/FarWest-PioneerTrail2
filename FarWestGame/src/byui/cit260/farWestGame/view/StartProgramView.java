@@ -120,8 +120,11 @@ System.out.println("============================================\n"
                 + "============================================\n");
 //mainMenuView = Create a new MainMenuView object
 //mainMenuView.displayMainMenuView()
+
+MainMenuView mainMenuView = new MainMenuView();
+mainMenuView.displayMainMenuView();
 //RETURN true
-//}
+return true;
 //    
    } 
     
