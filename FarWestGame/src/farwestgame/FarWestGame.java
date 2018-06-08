@@ -16,6 +16,7 @@ import byui.cit260.farWestGame.model.Scene;
 import byui.cit260.farWestGame.model.Supply;
 import byui.cit260.farWestGame.model.Tool;
 import byui.cit260.farWestGame.model.Location;
+import byui.cit260.farWestGame.view.MainMenuView;
 import byui.cit260.farWestGame.view.StartProgramView;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +29,12 @@ import java.util.List;
 public class FarWestGame {
     
     public static void main(String[] args) {
-        StartProgramView startProgramView = new StartProgramView();
-        startProgramView.display();
-        startProgramView.getInputs();
+//        StartProgramView startProgramView = new StartProgramView();
+//        startProgramView.display();
+//        startProgramView.getInputs();
+
+          MainMenuView mainMenuView = new MainMenuView(); //this creates the object
+          mainMenuView.displayMainMenuView();//calling display function
     }
     
  
