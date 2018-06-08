@@ -5,6 +5,7 @@
  */
 package byui.cit260.farWestGame.view;
 
+import byui.cit260.farWestGame.model.Player;
 import java.util.Scanner;
 
 /**
@@ -30,12 +31,12 @@ public class StartProgramView {
 
     }
 
-    private boolean doAction(String[] inputs) {
-        System.out.println("**** doAction() called ***");
-        System.out.println("\tinputs = " + inputs[0]);
-
-        return true;
-    }
+//    private boolean doAction(String[] inputs) {
+//        System.out.println("**** doAction() called ***");
+//        System.out.println("\tinputs = " + inputs[0]);
+//
+//        return true;
+//    }
 
 //    private String[] geInputs() {
 //        System.out.println("**** getInputs() called ****");
@@ -94,11 +95,11 @@ public class StartProgramView {
 //@author Agustin Gimenez
     
 //doAction(inputs): boolean {
-    public boolean doAction(inputs){
+    public boolean doAction(String inputs[]){
 //playersName = get the first value in the inputs array
-playersName = inputs[0];
+String playersName = inputs[0];
 //player = savePlayer(playersName)
-player = savePlayer(playersName);        
+Player player = savePlayer(playersName);        
 //IF player == null
 // display “Could not create the player. “ +
 // “Enter a different name.”
@@ -126,6 +127,10 @@ System.out.println("============================================\n"
     
     public void display() {
         System.out.println("**** display() called ****");
+    }
+
+    private Player savePlayer(String playersName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
