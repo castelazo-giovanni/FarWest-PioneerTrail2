@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Giovanni
+ * @author Giovanni Castelazo
  */
 public class StartProgramView {
 

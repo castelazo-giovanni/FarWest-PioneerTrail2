@@ -81,19 +81,19 @@ public class HelpMenuView {
     
 
     public void goalOfGame() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("What is the Goal of the Game?"); //To change body of generated methods, choose Tools | Templates.
     }
 
     public void howToMove() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("How to Move"); //To change body of generated methods, choose Tools | Templates.
     }
 
     public void useTheResources() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Using the Resources"); //To change body of generated methods, choose Tools | Templates.
     }
 
     public void estimateNumberOfResources() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Estimating the Resources"); //To change body of generated methods, choose Tools | Templates.
     }   
     
    }

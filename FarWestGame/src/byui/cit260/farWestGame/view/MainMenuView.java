@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class MainMenuView {
 
-    //author Araceli Camarillo Main Menu
+    //author Agustin Gimenez Main Menu
     public void displayMainMenuView() {
 
         boolean valid = false;//new variable assigned value
