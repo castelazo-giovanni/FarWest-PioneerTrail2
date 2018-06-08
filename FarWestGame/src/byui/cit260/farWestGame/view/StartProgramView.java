@@ -49,20 +49,21 @@ public class StartProgramView {
     public String[] getInputs() {
 //
         String[] inputs = new String[1];
+        System.out.println("******description*********");
 // Display a description of the view
 //
         boolean valid = false;
         while (valid == false) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Select option");
-            String menuOption = scanner.nextLine();
-            menuOption = menuOption.trim();
-            menuOption = menuOption.toUpperCase();
-            System.out.println(menuOption.trim());
-            if (menuOption.length() < 1) {
+            inputs[0] = scanner.nextLine();
+            inputs[0] = inputs[0].trim();
+            inputs[0] = inputs[0].toUpperCase();
+            System.out.println(inputs[0].trim());
+            if (inputs[0].length() < 1) {
                 System.out.println("You must enter a non-blank value");
             }
-            if (menuOption.equals("Q")) {
+            if (inputs[0].equals("Q")) {
                 valid = true;
                 
             }
@@ -74,6 +75,7 @@ public class StartProgramView {
 
 //IF length of the value < 1 then
 //Display "You must enter a non-blank value”
+
 //Continue (move to the top of the loop and repeat)
 //ENDIF
 //Assign the value to the fist position in the inputs array
