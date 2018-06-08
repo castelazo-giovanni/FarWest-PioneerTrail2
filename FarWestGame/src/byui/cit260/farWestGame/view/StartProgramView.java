@@ -85,13 +85,45 @@ public class StartProgramView {
             }
             if (inputs[0].equals("Q")) {
                 valid = true;
-
             }
         }
 
         return inputs;
     }
 
+//@author Agustin Gimenez
+    
+//doAction(inputs): boolean {
+    public boolean doAction(inputs){
+//playersName = get the first value in the inputs array
+playersName = inputs[0];
+//player = savePlayer(playersName)
+player = savePlayer(playersName);        
+//IF player == null
+// display “Could not create the player. “ +
+// “Enter a different name.”
+// RETURN false
+//ENDIF
+if (player == null) {
+    System.out.println("Could not create the player.\n"
+            + "Enter a different name.");    
+                return false;
+}
+//DISPLAY "================================================= "
+// + "Welcome to the game " + playersName
+// + "We hope you have a lot of fun!”
+// + "================================================= "
+System.out.println("============================================\n"
+        + "Welcome to the game " + playersName
+        + "We hope you have a lot of fun!\n"
+                + "============================================\n");
+//mainMenuView = Create a new MainMenuView object
+//mainMenuView.displayMainMenuView()
+//RETURN true
+//}
+//    
+   } 
+    
     public void display() {
         System.out.println("**** display() called ****");
     }
