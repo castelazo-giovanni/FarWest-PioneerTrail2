@@ -5,7 +5,7 @@
  */
 package byui.cit260.farWestGame.view;
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 /**
  *
