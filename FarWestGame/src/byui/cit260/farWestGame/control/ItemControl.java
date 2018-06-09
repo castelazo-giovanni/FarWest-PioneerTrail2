@@ -7,7 +7,7 @@ package byui.cit260.farWestGame.control;
 
 /**
  *
- * @author FGL
+ * @author Agustin Gimenez FGL
  */
 public class ItemControl {
     
