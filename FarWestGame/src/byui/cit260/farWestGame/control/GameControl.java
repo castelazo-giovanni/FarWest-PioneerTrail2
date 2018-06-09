@@ -11,7 +11,7 @@ import byui.cit260.farWestGame.view.GameMenuView;
 
 /**
  *
- * @author Agustin
+ * @author Agustin Gimenez
  */
 public class GameControl {
     
