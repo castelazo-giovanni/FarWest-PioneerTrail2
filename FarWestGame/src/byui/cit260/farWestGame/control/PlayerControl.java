@@ -9,7 +9,7 @@ import byui.cit260.farWestGame.model.Player;
 
 /**
  *
- * @author Nacher
+ * @author Agustin
  */
 public class PlayerControl {
     
