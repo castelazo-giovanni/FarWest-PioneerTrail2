@@ -127,7 +127,7 @@ public class ResourceControl {
 
     }
 
-    //Author Agustin (FGL) (Team Assignment)
+    //Author Agustin Gimenez (FGL) (Team Assignment)
     public static double calSupplyFound(int userWheel, int userBullets, int userWood, int beginningWheel, int beginningBullets, int beginningWood, int wheelAvailable, int bulletsAvailable, int woodAvailable) {
     
         
