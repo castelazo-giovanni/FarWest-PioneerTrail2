@@ -11,7 +11,7 @@ import java.util.Objects;
 
 /**
  *
- * @author FGL
+ * @author Agustin Gimenez FGL
  */
 public class Resource implements Serializable{
     
