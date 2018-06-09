@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package buyi.cit260.farwestgame.control;
+package byui.cit260.farWestGame.control;
 
 import byui.cit260.farWestGame.model.Actor;
 import java.util.List;

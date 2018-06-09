@@ -5,6 +5,7 @@
  */
 package buyi.cit260.farwestgame.control;
 
+import byui.cit260.farWestGame.control.ResourceControl;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

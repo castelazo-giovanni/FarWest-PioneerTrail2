@@ -12,23 +12,23 @@ import java.util.Scanner;
  * @author Araceli Camarillo
  */
 public class HelpMenuView {
-    
+
     public HelpMenuView() {
 
     }
-    
 
-    public void displayHelpMenuView(){
+    public void displayHelpMenuView() {
         boolean endOfView = false;
         do {
             String[] inputs = this.getInputs();
-            if (inputs.length < 1 || inputs[0].toUpperCase() == "Q") {
+            if (inputs.length < 1 || inputs[0].toUpperCase().equals("Q")) {
+                endOfView = true;
                 continue;
             }
             endOfView = doAction(inputs);
-        }while (endOfView != true);
+        } while (endOfView != true);
     }
-    
+
     public boolean doAction(String[] inputs) {
         String menuItem = inputs[0];
         menuItem = menuItem.toUpperCase(); //all have 2B uppercase and assign to menuItem as uppercases
@@ -40,60 +40,57 @@ public class HelpMenuView {
                 howToMove();
                 break;
             case "E":
-                useTheResources();
+                estimateNumberOfResources();
                 break;
             case "R":
-                estimateNumberOfResources();
+                useTheResources();
                 break;
             case "Q":
                 return true;
             default:
                 System.out.println("Invalid Menu Item");
-             }
-        System.out.println("**** doAction() called ***");
-        System.out.println("\tinputs = " + inputs[0]);
+        }
         return false;
-       }
-    
-    public String[] getInputs(){
+    }
+
+    public String[] getInputs() {
         String[] inputs = new String[1];//it's 1 cause you're only getting 1 input from user
-        System.out.println("******description*********");
+        System.out.println("G - What is the goal of the game?\n"
+                + "M - How to move\n"
+                + "E - Estimate the number of resources\n"
+                + "R - Use the resources\n"
+                + "Q - Quit");
+        // Display a description of the view
         // Display a description of the view
         boolean valid = false;
-        do{
+        while (valid == false) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Select option");
             inputs[0] = scanner.nextLine();
             inputs[0] = inputs[0].trim();
-            inputs[0] = inputs[0].toUpperCase();
-            System.out.println(inputs[0].trim());
-            
-            if(inputs[0].length()<1){
+            if (inputs[0].length() < 1) {
                 System.out.println("You must enter a non-blank value");
             }
-            if(inputs[0]=="Q"){
-                valid = true;
-            }
-            
-        }while (valid != true);
-         return inputs;
-    } 
-    
+            valid = true;
+
+        }
+        return inputs;
+    }
 
     public void goalOfGame() {
-        throw new UnsupportedOperationException("What is the Goal of the Game?"); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("goal of the game called");
     }
 
     public void howToMove() {
-        throw new UnsupportedOperationException("How to Move"); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("how to move called");
     }
 
     public void useTheResources() {
-        throw new UnsupportedOperationException("Using the Resources"); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("use the resource called");
     }
 
     public void estimateNumberOfResources() {
-        throw new UnsupportedOperationException("Estimating the Resources"); //To change body of generated methods, choose Tools | Templates.
-    }   
-    
-   }
+        System.out.println("estimate number of resources called");
+    }
+
+}

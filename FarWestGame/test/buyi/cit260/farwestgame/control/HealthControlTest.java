@@ -5,6 +5,7 @@
  */
 package buyi.cit260.farwestgame.control;
 
+import byui.cit260.farWestGame.control.HealthControl;
 import byui.cit260.farWestGame.model.Actor;
 import java.util.ArrayList;
 import java.util.List;
