@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Agustin FGL (Individual Assignment)
+ * @author Agustin Gimenez FGL (Individual Assignment)
  */
 public class HealthControl {
     public boolean gameWonLost(List<Actor> family){
