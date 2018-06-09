@@ -7,7 +7,7 @@ package byui.cit260.farWestGame.view;
 
 /**
  *
- * @author Agustin
+ * @author Nacher
  */
 public class GameMenuView {
 
