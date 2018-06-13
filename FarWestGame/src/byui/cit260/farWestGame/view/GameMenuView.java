@@ -5,6 +5,7 @@
  */
 package byui.cit260.farWestGame.view;
 
+import byui.cit260.farWestGame.control.GameControl;
 import java.util.Scanner;
 
 /**
@@ -125,7 +126,34 @@ public class GameMenuView {
     }
 
     private void exploreLocation() {
-        System.out.println("Explore location called");
+        int value = 0;
+        while (value == 0) {
+            System.out.println("how much do you want to explore?");
+            System.out.println("a: 1 hour             Probability to find something:45%");
+            System.out.println("b: 2 hours            Probability to find something:65%");
+            System.out.println("c: more than 2 hours  Probability to find something:90%");
+            Scanner scanner = new Scanner(System.in);
+            String val = scanner.nextLine();
+            switch (val.toUpperCase()) {
+                case "A":
+                    value = 1;
+                    break;
+                case "B":
+                    value = 2;
+                    break;
+                case "C":
+                    value = 3;
+                    break;
+                case "Q":
+                    value = -1;
+                default:
+                    System.out.println("choose a correct option or choose Q to exit menu");
+            }
+            if (value > 0) {
+                GameControl.exploreLocation(value);
+            }
+
+        }
     }
 
     private void moveToLocation() {
