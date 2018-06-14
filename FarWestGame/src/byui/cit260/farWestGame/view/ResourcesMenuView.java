@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author kitka_000
+ * @author Araceli Camarillo
  */
 public class ResourcesMenuView {
     
@@ -34,10 +34,15 @@ public class ResourcesMenuView {
     
     public String[] getInputs() {
         String[] inputs = new String[1];
-        System.out.println("F - Insert How Much Food\n"
-                + "R - Restart existing game\n"
-                + "H - Get help on how to play the game\n"
-                + "E - Exit");
+        System.out.println("F - Insert Amount of Food\n"
+                + "A - Insert Amount of Axe\n"
+                + "H - Insert Amount of Hammer\n"
+                + "W - Insert Amount of Spare Wheels\n"
+                + "B - Insert Amount of Bullets\n"
+                + "W - Insert Amount of Wood\n"
+                + "R - Insert Amount of Rest\n"
+                + "D - Insert Amount of Drinking Water\n"
+                + "Q - Quit");
         // Display a description of the view
         boolean valid = false;
         while (valid == false) {
@@ -54,24 +59,64 @@ public class ResourcesMenuView {
         return inputs;
     }
     
-    private boolean doAction(String[] inputs) {
+    public boolean doAction(String[] inputs) {
         String menuItem = inputs[0].toUpperCase();
         switch (menuItem) {
-            case "N":
-                startNewGame();
+            case "F":
+                amountOfFood();
                 break;
-            case "R":
-                restartGame();
+            case "A":
+                toolAmountAxe();
                 break;
             case "H":
-                getHelp();
+                toolAmountHammer();
                 break;
-            case "E":
+            case "W":
+                resourceAmountWheels();
+                break;
+            case "B":
+                resourceAmountBullets();
+                break;
+            case "R":
+                restAmount();
+                break;
+            case "D":
+                resourceAmountWater();
+                break;    
+            case "Q":
                 return true;
             default:
                 System.out.println("Invalid menu item.");
         }
         return false;
+    }
+
+    public void amountOfFood() {
+        System.out.println("Insert Amount of Food"); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void toolAmountAxe() {
+        System.out.println("Insert Amount of Axe"); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void toolAmountHammer() {
+        System.out.println("Insert Amount of Hammer"); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void resourceAmountWheels() {
+        System.out.println("Insert Amount of Spare Wheels"); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void resourceAmountBullets() {
+        System.out.println("Insert Amount of Bullets"); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void restAmount() {
+        System.out.println("Insert Amount of Rest"); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void resourceAmountWater() {
+        System.out.println("Insert Amount of DrinkingWater"); //To change body of generated methods, choose Tools | Templates.
     }
 
   
