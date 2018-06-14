@@ -116,7 +116,7 @@ public class ResourcesMenuView {
     }
 
     public void resourceAmountWater() {
-        System.out.println("Insert Amount of DrinkingWater"); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Insert Amount of Drinking Water"); //To change body of generated methods, choose Tools | Templates.
     }
 
   

@@ -183,9 +183,5 @@ public class ResourceControl {
           else {
             return supplyWeight;    
           }
-                
-         
-        
-        
     }    
 }
