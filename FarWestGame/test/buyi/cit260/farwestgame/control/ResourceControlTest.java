@@ -161,6 +161,7 @@ public class ResourceControlTest {
    
     // Author Giovanni (individual assignment)
     public void testCalResoure(){
+        // Prints out heading for the test
         System.out.println("calResource");
         
         // ---- calResource Test Case 1 ----
