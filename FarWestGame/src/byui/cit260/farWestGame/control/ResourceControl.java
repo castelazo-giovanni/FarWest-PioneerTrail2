@@ -49,8 +49,7 @@ public class ResourceControl {
     // Author Giovanni (individual assignment)
 
      public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, double remainingNourishment) {
-
-        
+      
         // checks to make sure that beginning wheel does not exceed max
         if (beginningWheel < 0 || beginningWheel > 10) {
             return -1;
@@ -65,8 +64,7 @@ public class ResourceControl {
         if (beginningWood < 0 || beginningWood > 50) {
             return -1;
         }
-       
-        
+         
         // checks to make sure that beginning nourishment does not exceed max
         if (remainingNourishment < 0 || remainingNourishment > 500) {
             return -1;

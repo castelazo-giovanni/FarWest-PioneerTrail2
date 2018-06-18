@@ -162,6 +162,8 @@ public class GameMenuView {
 
     private void estimateNumberOfResources() {
         System.out.println("Estimate number of resources called");
+        ResourcesMenuView resourcesMenuView = new ResourcesMenuView();//setting instance of class
+        resourcesMenuView.displayResourcesMenuView(); //call view display
     }
 
     private void repairWagons() {

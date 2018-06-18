@@ -136,8 +136,8 @@ public class MainMenuView {
     }
 
     private boolean doAction(String[] inputs) {
-        String menuItem = inputs[0].toUpperCase();
-        switch (menuItem) {
+        String menuItem = inputs[0].toUpperCase(); 
+        switch (menuItem) {              
             case "N":
                 startNewGame();
                 break;

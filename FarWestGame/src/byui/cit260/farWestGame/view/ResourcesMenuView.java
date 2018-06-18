@@ -63,25 +63,25 @@ public class ResourcesMenuView {
         String menuItem = inputs[0].toUpperCase();
         switch (menuItem) {
             case "F":
-                amountOfFood();
+                amountOfResource("Food");
                 break;
             case "A":
-                toolAmountAxe();
+                amountOfResource("Axe");
                 break;
             case "H":
-                toolAmountHammer();
+                amountOfResource("Hammer");
                 break;
             case "W":
-                resourceAmountWheels();
+                amountOfResource("Wheels");
                 break;
             case "B":
-                resourceAmountBullets();
+                amountOfResource("Bullets");
                 break;
             case "R":
-                restAmount();
+                amountOfResource("Rest");
                 break;
             case "D":
-                resourceAmountWater();
+                amountOfResource("Water");
                 break;    
             case "Q":
                 return true;
@@ -91,33 +91,10 @@ public class ResourcesMenuView {
         return false;
     }
 
-    public void amountOfFood() {
-        System.out.println("Insert Amount of Food"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void toolAmountAxe() {
-        System.out.println("Insert Amount of Axe"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void toolAmountHammer() {
-        System.out.println("Insert Amount of Hammer"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void resourceAmountWheels() {
-        System.out.println("Insert Amount of Spare Wheels"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void resourceAmountBullets() {
-        System.out.println("Insert Amount of Bullets"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void restAmount() {
-        System.out.println("Insert Amount of Rest"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void resourceAmountWater() {
-        System.out.println("Insert Amount of Drinking Water"); //To change body of generated methods, choose Tools | Templates.
-    }
-
-  
+    public void amountOfResource(String resourceType ) {
+        
+        GetResourceAmountView resourceView = new GetResourceAmountView();//setting instance of class
+        resourceView.setInventoryType(resourceType);//telling new ResourceView what kind of inventory you've selected
+        resourceView.display(); //call view display
+    }     
 }
