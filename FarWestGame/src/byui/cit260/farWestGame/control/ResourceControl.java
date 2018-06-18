@@ -40,9 +40,10 @@ public class ResourceControl {
         }
         
         // code calculates the nourishment used by the group
+        
         double nourishmentUsed = .5 * milesTraveled * (numberActors + 1);
         
-        return nourishmentUsed;
+        return nourishmentUsed;        
     }
     
     // Author Giovanni (individual assignment)
