@@ -118,7 +118,8 @@ public class MainMenuView {
         System.out.println("N - Start new game\n"
                 + "R - Restart existing game\n"
                 + "H - Get help on how to play the game\n"
-                + "E - Exit");
+                + "E - Exit the game without saving\n"
+                + "Q - Quit");
         // Display a description of the view
         boolean valid = false;
         while (valid == false) {
@@ -148,6 +149,9 @@ public class MainMenuView {
                 getHelp();
                 break;
             case "E":
+                exitGame();
+                break;
+            case "Q":
                 return true;
             default:
                 System.out.println("Invalid menu item.");
@@ -169,6 +173,11 @@ public class MainMenuView {
     private void getHelp() {
         HelpMenuView helpMenuView = new HelpMenuView(); 
         helpMenuView.displayHelpMenuView();
+    }
+    
+    private void exitGame() {
+        ExitGameView exitGameView = new ExitGameView();
+        exitGameView.displayExitGameView();
     }
 
 }
