@@ -185,7 +185,8 @@ public class GameMenuView {
     private void huntForResources() {
         //System.out.println("Hunt for resources called");
         HuntingView huntingView = new HuntingView();
-        huntingView.displayHuntingView();
+        //huntingView.displayHuntingView();
+        huntingView.display();
     }
 
     private void saveGame() {

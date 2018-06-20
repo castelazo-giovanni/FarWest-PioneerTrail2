@@ -10,12 +10,13 @@ import java.util.Scanner;
  *
  * @author Giovanni
  */
-public class HuntingView {
+// public class HuntingView {
+public class HuntingView extends View { 
     
    public HuntingView(){
        
    }
-    
+   /* 
    public void displayHuntingView(){
         boolean endOfView = false;
         
@@ -28,7 +29,9 @@ public class HuntingView {
             endOfView = doAction(inputs);
         } while (endOfView != true);
     }
+   */
    
+   /*
    public String[] getInputs() {
         String[] inputs = new String[1]; //it's 1 cause you're only getting 1 input from user
         System.out.println("\nWhat would you like to hunt?"
@@ -49,6 +52,21 @@ public class HuntingView {
             valid = true;
         }
         return inputs;
+    }
+   */
+   
+   public String[] getInputs() {
+        System.out.println("\nWhat would you like to hunt?"
+                + "\nR - Hunt for rabbit"
+                + "\nB - Hunt for birds"
+                + "\nD - Hunt a deer"
+                + "\nQ - Stop hunting"
+                + "\n");
+        
+        String[] inputs;
+        inputs = this.getInput("\nSelect animal to hunt.");
+        return inputs;
+        
     }
    
    public boolean doAction(String[] inputs) {
