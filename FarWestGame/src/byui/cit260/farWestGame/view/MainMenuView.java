@@ -177,7 +177,8 @@ public class MainMenuView {
     
     private void exitGame() {
         ExitGameView exitGameView = new ExitGameView();
-        exitGameView.displayExitGameView();
+        exitGameView.display();
+        //exitGameView.displayExitGameView();
     }
 
 }

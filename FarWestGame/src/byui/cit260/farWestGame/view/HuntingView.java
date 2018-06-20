@@ -56,7 +56,7 @@ public class HuntingView extends View {
    */
    
    public String[] getInputs() {
-        System.out.println("\nWhat would you like to hunt?"
+        System.out.println("\nWhat would you like to hunt?\n"
                 + "\nR - Hunt for rabbit"
                 + "\nB - Hunt for birds"
                 + "\nD - Hunt a deer"

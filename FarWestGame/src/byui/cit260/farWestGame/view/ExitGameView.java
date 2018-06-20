@@ -11,12 +11,12 @@ import java.util.Scanner;
  *
  * @author Giovanni
  */
-public class ExitGameView {
+public class ExitGameView extends View {
    
     public ExitGameView(){
         
     }
-    
+    /*
     public void displayExitGameView(){
         boolean endOfView = false;
         
@@ -28,6 +28,21 @@ public class ExitGameView {
             }
             endOfView = doAction(inputs);
         } while (endOfView != true);
+    }
+    */
+    
+    public String[] getInputs() {
+        System.out.println("\nAre you Sure you want to Quit"
+                + "\n If you end now, all progress will be lost\n"
+                + "\nE - End Game without Saving"
+                + "\nS - Save Game and exit"
+                + "\nQ - Return to main menu"
+                + "\n");
+        
+        String[] inputs;
+        inputs = this.getInput("\nWhat would you like to do?");
+        return inputs;
+        
     }
     
     public boolean doAction(String[] inputs) {
@@ -48,6 +63,7 @@ public class ExitGameView {
         return false;
     }
     
+    /*
     public String[] getInputs() {
         String[] inputs = new String[1]; //it's 1 cause you're only getting 1 input from user
         System.out.println("\nAre you Sure you want to Quit"
@@ -69,9 +85,10 @@ public class ExitGameView {
         }
         return inputs;
     }
+    */
     
     public void exitGame() {
-        System.out.println("exit of program called");
+        System.out.println("exit of program called / game progress not saved.");
     }
     
     public void saveGame() {
